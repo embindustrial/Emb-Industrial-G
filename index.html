@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMB Industrial Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Reset y tipografía */
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif;}
+body {background:#f5f5f5; color:#222; line-height:1.6;}
+a {text-decoration:none;}
+
+/* Menú superior */
+nav {background:#0d1b2a; color:white; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100;}
+nav .logo {font-weight:bold; font-size:1.5rem;}
+nav ul {list-style:none; display:flex; gap:20px;}
+nav ul li a {color:white; font-weight:500;}
+nav ul li a:hover {color:#f03c3c;}
+
+/* Banner */
+.banner {position:relative;}
+.banner img {width:100%; height:auto; display:block;}
+.banner-text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:white; text-align:center;}
+.banner-text h1 {font-size:3rem; text-shadow:1px 1px 5px rgba(0,0,0,0.6);}
+.banner-text p {font-size:1.5rem; margin-top:10px; text-shadow:1px 1px 5px rgba(0,0,0,0.5);}
+
+/* Productos */
+.productos {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:30px;}
+.productos img {width:250px; border-radius:5px; box-shadow:0 2px 8px rgba(0,0,0,0.2); transition:transform 0.3s;}
+.productos img:hover {transform:scale(1.05);}
+
+/* Botón WhatsApp */
+.whatsapp {display:block; width:220px; margin:20px auto; padding:15px; text-align:center; background:#25D366; color:white; font-weight:bold; border-radius:5px;}
+.whatsapp:hover {background:#1DA851;}
+
+/* Sección contacto */
+.contacto {max-width:900px; margin:40px auto; padding:30px; background:white; border-radius:10px; box-shadow:0 3px 12px rgba(0,0,0,0.15);}
+.contacto p {margin:12px 0; font-size:1.1rem;}
+.contacto a {color:#0d1b2a; font-weight:500;}
+.contacto a:hover {color:#f03c3c;}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul {flex-direction:column; gap:10px; margin-top:10px;}
+    .banner-text h1 {font-size:2rem;}
+    .banner-text p {font-size:1rem;}
+    .productos img {width:45%;}
+}
+@media(max-width:480px){
+    .productos img {width:100%;}
+}
+</style>
+</head>
+<body>
+
+<!-- Menú superior -->
+<nav>
+    <div class="logo">EMB Industrial Group</div>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- Banner -->
+<div class="banner">
+    <img src="imagenes/banner1.jpeg" alt="Banner EMB Industrial">
+    <div class="banner-text">
+        <h1>Soluciones industriales con eficiencia y confianza</h1>
+        <p>Repuestos, servicio técnico y accesorios para bordadoras industriales</p>
+    </div>
+</div>
+
+<!-- Galería de productos -->
+<h2 id="productos" style="text-align:center; margin:30px 0;">Nuestros Productos</h2>
+<div class="productos">
+    <img src="imagenes/producto1.jpeg" alt="Producto 1">
+    <img src="imagenes/producto2.jpeg" alt="Producto 2">
+    <img src="imagenes/producto3.jpeg" alt="Producto 3">
+    <img src="imagenes/producto4.jpeg" alt="Producto 4">
+</div>
+
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/593995182911" target="_blank" class="whatsapp">Contáctanos por WhatsApp</a>
+
+<!-- Sección contacto -->
+<div class="contacto" id="contacto">
+    <p><strong>Paúl Murillo</strong> - Director Comercial</p>
+    <p>Email: <a href="mailto:ventas@embindustrial.com">ventas@embindustrial.com</a></p>
+    <p>Tel: +593 995182911</p>
+    <p>Sitio web: <a href="https://www.embindustrial.com" target="_blank">www.embindustrial.com</a></p>
+</div>
+
+</body>
+</html>
